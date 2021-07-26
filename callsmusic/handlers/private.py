@@ -9,25 +9,25 @@ from ..helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f'<b>👋🏻 Hi {message.from_user.mention()}!</b>\n\n'
-        'I am Calls Music bot, '
-        'I let you play music in group calls.'
-        '\n\nThe commands I currently support are:\n\n'
-        '/play - play the replied audio file or YouTube video\n'
-        '/pause - pause the audio stream\n'
-        '/resume - resume the audio stream\n'
-        '/skip - skip the current audio stream\n'
-        '/mute - mute the userbot\n'
-        '/unmute - unmute the userbot\n'
-        '/stop - clear the queue and remove the userbot from the call',
+        f'<b>👋🏻 Salam {message.from_user.mention()}!</b>\n\n'
+        'Mən @tag1y3v tərəfindən yaradılan "Khan Music Bot"-am, '
+        'Mən sizin səsli söhbətinizdə musiqi dinləməyinizə kömək edə bilərəm.'
+        '\n\nHazırda istifadə edəcəyiniz əmrlərim bunlardır:\n\n'
+        '/play - Yanıt verdiyiniz və ya adını yazdığınız musiqini oxutmaq\n'
+        '/pause - Oxunan musiqiyə pauza vermək\n'
+        '/resume - Musiqi axınını davam etdirmək\n'
+        '/skip - Oxunan musiqini dəyişdirmək\n'
+        '/mute - Assistantı səssizə almaq\n'
+        '/unmute - Assistantın səsini açmaq\n'
+        '/stop - Musiqi axınını sonlandırmaq',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        '🔈 Channel', url='https://t.me/callsmusic',
+                        '🔈 Kanal', url='https://t.me/KhanVlog',
                     ),
                     InlineKeyboardButton(
-                        'Group 💬', url='https://t.me/callsmusicchat',
+                        'Qrup 💬', url='https://t.me/KhanChat',
                     ),
                 ],
             ],
